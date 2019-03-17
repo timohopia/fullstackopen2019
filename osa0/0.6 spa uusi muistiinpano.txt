@@ -1,0 +1,12 @@
+#0.6 spa uusi muistiinpano
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over palvelin:
+Päivitetään tietokantaan 
+uusi note
+end note
+
+palvelin->selain: 201 Created, Response: {"message":"note created"}
+
+note over selain:
+Päivitetään selain
+end note
