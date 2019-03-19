@@ -35,7 +35,7 @@ const Statistics = (props) => {
                     <Statistic text="huono" value ={props.bad} />
                     <Statistic text="yhteensä" value ={count} />
                     <Statistic text="keskiarvo" value ={(props.good - props.bad)/count} />
-                    <Statistic text="keskiarvo" value ={100*props.good/count + ' %'} />
+                    <Statistic text="positiivisia" value ={100*props.good/count + ' %'} />
                 </tbody>
             </table>
         </div>
