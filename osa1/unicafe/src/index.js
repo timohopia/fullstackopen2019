@@ -17,7 +17,7 @@ const Statistics = (props) => {
                 statistiikka
             </h2>
                 <div>
-                    ei yhtğ¤ğ¤n palautetta annettu
+                    ei yhtÃ¤Ã¤n palautetta annettu
                 </div>
             </div>
         )
@@ -30,10 +30,10 @@ const Statistics = (props) => {
             </h2>
             <table>
                 <tbody>
-                    <Statistic text="hyvğ¤" value ={props.good} />
+                    <Statistic text="hyvÃ¤" value ={props.good} />
                     <Statistic text="neutraali" value ={props.neutral} />
                     <Statistic text="huono" value ={props.bad} />
-                    <Statistic text="yhteensğ¤" value ={count} />
+                    <Statistic text="yhteensÃ¤" value ={count} />
                     <Statistic text="keskiarvo" value ={(props.good - props.bad)/count} />
                     <Statistic text="positiivisia" value ={100*props.good/count + ' %'} />
                 </tbody>
@@ -67,7 +67,7 @@ return (
             anna palautetta
         </h1>
         <div>
-            <Button handleClick={handleGoodClick} text='hyvğ¤' />
+            <Button handleClick={handleGoodClick} text='hyvÃ¤' />
             <Button handleClick={handleNeutralClick} text='neutraali' />
             <Button handleClick={handleBadClick} text='huono' />
         </div>
