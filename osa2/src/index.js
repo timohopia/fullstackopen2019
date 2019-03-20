@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 
-const notes = [
+const notes = [ 
   {
     id: 1,  
     content: 'HTML on helppoa',
