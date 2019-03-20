@@ -11,13 +11,13 @@ const notes = [
   },
   {
     id: 2,
-    content: 'Selain pystyy suorittamaan vain javascriptið¤',
+    content: 'Selain pystyy suorittamaan vain javascriptiÃ¤',
     date: '2019-01-10T18:39:34.091Z',
     important: false
   },
   {
     id: 3,
-    content: 'HTTP-protokollan tð¤rkeimmð¤t metodit ovat GET ja POST',
+    content: 'HTTP-protokollan tÃ¤rkeimmÃ¤t metodit ovat GET ja POST',
     date: '2019-01-10T19:20:14.298Z',
     important: true
   }
