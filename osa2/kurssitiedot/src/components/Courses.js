@@ -40,7 +40,7 @@ const Total = ({parts}) => {
     const total = parts.reduce(reducer,0)
     return (
         <div>
-            yhteensÃ¤ {total} tehtÃ¤vÃ¤Ã¤
+            yhteensğ¤ {total} tehtğ¤vğ¤ğ¤
         </div>
     )
 }
@@ -58,8 +58,8 @@ const Course = (props) => {
 const Courses = ({courses}) => {
     const rows = () => courses.map(course =>
         <Course 
-        key={course.id}
-        course={course}
+            key={course.id}
+            course={course}
         />
       )
     return (
