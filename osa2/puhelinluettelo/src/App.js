@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 const ShowPhoneCatalog = ({persons}) => {
   const rows = () => persons.map(person => 
@@ -17,8 +18,8 @@ const ShowPhoneCatalog = ({persons}) => {
   )
 }
 
-const App = (props) => {
-  const [persons, setPersons] = useState(props.persons)
+const App = () => {
+  const  [persons, setPersons] = useState([])
   const [ newName, setNewName ] = useState('')
   const [ newNumber, setNewNumber ] = useState('')  
   const names = persons.map(function(person) {
@@ -57,7 +58,15 @@ const App = (props) => {
     setNewFilter(event.target.value)
     console.log(newFilter)
   }
- 
+  
+  useEffect(() => {
+    axios
+      .get('http://localhost:3001/persons')
+      .then(response => {
+        setPersons(response.data)
+      })
+  }, [])
+
   return (
       <div>
         <h1>
